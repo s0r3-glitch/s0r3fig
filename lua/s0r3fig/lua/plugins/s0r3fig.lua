@@ -1,1 +1,2 @@
-return{require("s0r3fig")}
+require("s0r3fig")
+return{}
