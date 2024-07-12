@@ -11,6 +11,6 @@ vim.opt.mouse = ""
 
 
 require("s0r3fig.lua.vim-options")
---require("s0r3fig.lua.plugins")
+require("s0r3fig.lua.plugins")
 --vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 require'lspconfig'.pyright.setup{}
