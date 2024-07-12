@@ -1,0 +1,21 @@
+*s0r3fig.txt*     For Neovim >= 0.8.0    Last change: 2024 July 12
+
+==============================================================================
+Table of Contents                         *s0r3fig-table-of-contents*
+
+1. What is s0r3fig        |s0r3fig-What-is-s0r3fig|
+  - Using it              |s0r3fig-What-is-s0r3fig-using-it|
+
+
+==============================================================================
+1. What is s0r3fig        *s0r3fig-What-is-s0r3fig*
+
+
+
+s0r3fig is a pseudo-plugin for neovim used to import my neovim using lavy.nvim. Normally you would want to not do this but I have what I think is a valid reason to do this. As like most people who use neovim I keep my config stored on my GitHub so that I can easy access to it no matter where I am. This is extremely useful for me since I do development work on multiple machines using multiple different operating systems, however, due to me using different operating systems actively updating my config between machines is a chore as I dont always remember to update a machine or cant remember if I did, and yes all I technically need to do to update it is cd into the nvim config directory and do a git pull that gets tedious since I end up doing it on already updated machines and it wastes time. I tried thinking of different ways to solve this minor inconvenience I was facing and almost all of them were way to much work to set up and on new machines and thats when it struck me "I can use lazy.nvim to update my config for me!" and so I went and turned my config into a plugin. With this shift lazy.nvim will automatically look for updates to my config when I start neovim and will automatically pull down any changes i have made to my config. I have now solved my minor inconvenience and have truly become one with the ways of using lazy.nvim
+
+
+USING IT                  *s0r3fig-What-is-s0r3fig-using-it*
+
+Somewhere on my GitHub is a project called nvim-config or something like that. All you need to do is pull that down into your nvim config directory and lazy.nvim will take care of the rest as all it does is download lazy.nvim and have it download this project. If you wish to this plugin to your own config all you need to do is add the following to your config
+`{"s0r3-glitch/s0r3fig",import="plugins"}`
