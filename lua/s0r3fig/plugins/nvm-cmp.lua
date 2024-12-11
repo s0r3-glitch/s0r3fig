@@ -11,7 +11,7 @@ return{
                                 dependencies = "rafamadriz/friendly-snippets",
                                 opts = { history = true, updateevents = "TextChanged,TextChangedI" },
                                 config = function(_, opts)
-                                    require("s0r3fig.lua.plugins.configs.luansnip").luasnip(opts)
+                                    require("s0r3fig.plugins.configs.luansnip").luasnip(opts)
                                     end,
                             },
 
@@ -39,7 +39,7 @@ return{
 
 
         opts = function()
-            return require "s0r3fig.lua.plugins.configs.cmp"
+            return require "s0r3fig.plugins.configs.cmp"
             end,
         
         config = function(_, opts)
