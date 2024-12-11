@@ -33,9 +33,14 @@ Click on `Use this template`
 ```
 .
 ├── lua
-│   ├── plugin_name
-│   │   └── module.lua
-│   └── plugin_name.lua
+│   ├── s0r3fig
+│   │   ├── ftplugin
+│   │   ├── lua
+        │   ├──           
+        │
+        │
+│   │   └── TerminalBG
+│   └── s0r3fig.lua
 ├── Makefile
 ├── plugin
 │   └── plugin_name.lua
