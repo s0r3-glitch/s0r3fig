@@ -100,7 +100,7 @@ local options = {
             fallback()
         end
       end, {"i","s","c",}),
-    ["<S-j>"] = cmp.mapping(function(fallback)
+    ["<C-S-j>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif require("luasnip").expand_or_jumpable() then
@@ -112,7 +112,7 @@ local options = {
       "i",
       "s",
     }),
-    ["<S-k>"] = cmp.mapping(function(fallback)
+    ["<C-S-k>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
       elseif require("luasnip").jumpable(-1) then
